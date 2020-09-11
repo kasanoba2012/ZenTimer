@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WindActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜 선택 하기"
+        android:onClick="dayChoice" />
+
+    <TextView
+        android:id="@+id/nowTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 선택된 시간" />
+
+    <Button
+        android:id="@+id/dateTimeCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택 시간 확인"
+        android:onClick="dateTimeCheck"/>
+
+    <Button
+        android:id="@+id/clockClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시계"
+        android:onClick="clockClick"/>
+
+    <Button
+        android:id="@+id/zenTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="젠타이밍 확인"
+        android:onClick="zenClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="00:00:00"
+        android:id="@+id/clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="00:00:00"
+        android:id="@+id/clock2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</LinearLayout>
